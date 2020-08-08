@@ -1,0 +1,307 @@
+:root {
+  --brand-bg-dark: #181b2a;
+  --brand-bg-medium: #2e2e47;
+  --brand-bg-light: #424266;
+  --brand-primary: #b7ff2e;
+  --brand-primary-dark: #81c700;
+  --brand-secondary: #5330df;
+  --brand-secondary-dark: #3817a7;
+  --brand-warning: #e99e00;
+  --brand-error: #d7571f;
+  --brand-white: #f8f9fa;
+  --brand-black: black;
+  --brand-grey: #999ea2;
+
+  --primary: var(--brand-primary);
+  --secondary: var(--brand-secondary);
+  --success: var(--brand-primary-dark);
+  --info: var(--brand-bg-medium);
+  --warning: var(--brand-warning);
+  --danger: var(--brand-error);
+  --light: var(--brand-white);
+  --dark: #343a40;
+}
+
+body {
+  background-color: var(--brand-bg-dark);
+  color: var(--brand-white);
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-thing span {
+  font-size: 1.2em;
+}
+
+.container {
+  max-width: 1000px;
+  width: 80%;
+}
+
+.vertical-padding {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.green-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #b6ff2e;
+  text-transform: uppercase;
+}
+
+a {
+  color: var(--brand-primary);
+}
+
+a:hover {
+  color: var(--brand-primary-dark);
+}
+
+.breadcrumb {
+  background-color: var(--brand-bg-medium);
+}
+
+.breadcrumb-item.active {
+  color: var(--brand-white);
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 9px 0px var(--brand-bg-dark);
+}
+
+.btn-group > .btn {
+  box-shadow: none;
+  border: 1px solid var(--brand-bg-dark);
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: var(--brand-black);
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-primary-dark);
+  color: var(--brand-black);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--brand-primary-dark);
+}
+
+.btn-outline-primary {
+  color: var(--brand-white);
+  text-transform: uppercase;
+  border: 1px solid var(--brand-primary);
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--brand-primary);
+  color: var(--brand-black);
+}
+
+.btn-secondary {
+  background-color: var(--brand-secondary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--brand-secondary-dark);
+}
+
+.btn-info {
+  background-color: var(--brand-bg-medium);
+}
+
+.btn-info:hover {
+  background-color: var(--brand-bg-dark);
+}
+
+.btn-danger {
+  background-color: var(--brand-error);
+}
+
+.btn-success {
+  background-color: var(--brand-primary-dark);
+  color: var(--brand-white);
+}
+
+.btn-warning {
+  background-color: var(--brand-warning);
+}
+
+.btn-warning:hover {
+  background-color: var(--brand-warning);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--brand-primary);
+  box-shadow: 0px 3px 9px 0px var(--brand-bg-dark);
+  color: var(--brand-black);
+}
+
+.nav-tabs {
+  border-bottom: 1px solid var(--brand-bg-medium);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: var(--brand-black);
+  background-color: var(--brand-primary);
+  border-color: var(--brand-bg-medium) var(--brand-bg-medium)
+    var(--brand-bg-light);
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: var(--brand-bg-medium) var(--brand-bg-medium)
+    var(--brand-bg-light);
+}
+
+.nav-tabs .nav-link.disabled {
+  color: var(--brand-grey);
+}
+
+.nav-link.disabled {
+  color: var(--brand-grey);
+}
+
+.page-link {
+  color: var(--brand-black);
+  background-color: #fff;
+  border-color: var(--brand-bg-dark);
+}
+
+.page-link:hover {
+  color: var(--brand-black);
+  background-color: var(--brand-primary);
+  border-color: var(--brand-grey);
+}
+
+.bg-light {
+  background-color: var(--brand-bg-light) !important;
+}
+
+.card {
+  background-color: var(--brand-bg-light);
+  border: 1px solid var(--brand-bg-medium);
+}
+
+.jumbotron {
+  background-color: var(--brand-secondary);
+  background: linear-gradient(
+    180deg,
+    var(--brand-secondary) 0%,
+    var(--brand-secondary-dark) 90%
+  );
+  color: var(--brand-white);
+}
+
+.border-primary {
+  border-color: var(--brand-primary) !important;
+}
+
+.text-primary {
+  color: var(--brand-primary) !important;
+}
+
+.list-group-item.active {
+  color: var(--brand-black);
+  border-color: var(--brand-bg-medium);
+  background-color: var(--brand-primary);
+}
+
+.list-group-item {
+  border: 1px solid var(--brand-bg-medium);
+}
+
+.bg-primary {
+  background-color: var(--brand-secondary) !important;
+  background: linear-gradient(
+    180deg,
+    var(--brand-primary) 0%,
+    var(--brand-primary-dark) 90%
+  ) !important;
+  color: var(--brand-black);
+}
+
+.card-title {
+  text-shadow: 1px 1px 6px var(--brand-black);
+  color: var(--brand-white) !important;
+}
+
+.card-text {
+  text-shadow: 1px 1px 6px var(--brand-black);
+  color: var(--brand-white);
+}
+
+.text-muted {
+  color: var(--brand-grey) !important;
+}
+
+.form-control:focus {
+  border-color: var(--brand-bg-medium);
+}
+
+.table-primary,
+.table-primary > td,
+.table-primary > th {
+  background-color: var(--brand-secondary);
+  color: var(--brand-white);
+}
+
+.table-hover .table-primary:hover {
+  background-color: var(--brand-secondary-dark);
+}
+
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+  background-color: var(--brand-secondary-dark);
+}
+
+.table td,
+.table th {
+  border-color: var(--brand-bg-dark);
+}
+
+.badge-primary {
+  background-color: var(--brand-secondary);
+}
+
+.alert-primary {
+  background-color: var(--brand-warning);
+  color: var(--brand-black);
+  border-color: var(--brand-bg-medium);
+}
+
+.grid-pics {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+.gird-pics > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-pics > div > div {
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+}
+
+.featured {
+  border: 0.5px solid #81c700;
+}
+
+.versionradius > div {
+  border: 1px solid #81c700;
+  border-radius: 5px;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
